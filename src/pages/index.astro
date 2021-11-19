@@ -1,0 +1,34 @@
+---
+import Navbar from "../components/Navbar.astro";
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = "My Astro Site";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en" data-theme="emerald">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- <link rel="stylesheet" href="/style/global.css"> -->
+    <!-- <link rel="stylesheet" href="/style/home.css"> -->
+
+    <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />
+  </head>
+  <body>
+    <main>
+      <Navbar />
+      <div class="container p-4">
+        <h1 class="text-3xl font-semibold">Hello World</h1>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "@example/starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/renderer-react": "^0.3.0-next.1",
+    "@astrojs/renderer-svelte": "^0.2.0-next.1",
+    "astro": "^0.21.0-next.8",
+    "autoprefixer": "^10.4.0",
+    "daisyui": "^1.16.2",
+    "gray-matter": "^4.0.3",
+    "postcss": "^8.3.11",
+    "prettier-plugin-astro": "^0.0.10",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "@astrojs/renderer-vue": "^0.2.0-next.2"
+  }
+}
